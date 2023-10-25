@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This is a bash script that accepts an IP as an argument and pings it 5 times
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+fi
+
+ping -c 5 "$1"
